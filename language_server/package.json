@@ -1,0 +1,22 @@
+{
+  "name": "zed-bookmark-language-server",
+  "version": "0.1.0",
+  "description": "A language server used for zed bookmark extension, to provide GotoDefinition functionality",
+  "homepage": "https://github.com/A-23187/zed-bookmark#readme",
+  "bugs": {
+    "url": "https://github.com/A-23187/zed-bookmark/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-23187/zed-bookmark.git"
+  },
+  "license": "Apache-2.0",
+  "author": "A23187 <a23187.1979421048@gmail.com>",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {},
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  }
+}

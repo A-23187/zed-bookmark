@@ -1,0 +1,3 @@
+extension.wasm
+node_modules/
+target/

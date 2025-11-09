@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Bookmark: Add bookmark",
+    "command": "read -e -i \"$(sed -n \"${ZED_ROW}p\" \"${ZED_RELATIVE_FILE}\")\" && echo -e \"\\n$REPLY\\n${ZED_RELATIVE_FILE}:$((${ZED_ROW} - 1)):$((${ZED_COLUMN} - 1))\" >> .zed/bookmarks.txt",
+    "env": {},
+    "hide": "on_success",
+    "reveal": "always"
+  },
+  {
+    "label": "Bookmark: Find bookmark",
+    "command": "zed",
+    "args": [".zed/bookmarks.txt"],
+    "env": {},
+    "hide": "always",
+    "reveal": "never"
+  }
+]
