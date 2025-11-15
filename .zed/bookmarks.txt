@@ -1,9 +1,0 @@
-
-const PACKAGE_NAME: &'static str = "zed-bookmark-language-server";
-this_file_not_exist.rs:3:6
-
-impl BookmarkExtension
-src/bookmark.rs:13:5
-
-name = "zed-bookmark"
-Cargo.toml:1:0
