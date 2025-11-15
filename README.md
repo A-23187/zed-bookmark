@@ -8,6 +8,8 @@ Zed-bookmark is a lightweight bookmark extension for the [Zed](https://zed.dev) 
 - **Go to source position** to jump from a bookmark to its source position, this is done by a custom language server
 - **Stale bookmark detection** indicated via diagnostics (yellow squiggly underline) when a bookmark cannot be resolved
 
+![zed-bookmark](https://github.com/user-attachments/assets/a9a197c1-fb14-4b15-9e9c-8448f6d8e55d)
+
 ## Setup
 1. Install the extension from the Zed extension marketplace
 2. Configure the extension by adding the following tasks to your `.zed/tasks.json` (or `~/.config/zed/tasks.json` for all workspaces)
