@@ -12,7 +12,17 @@ Zed-bookmark is a lightweight bookmark extension for the [Zed](https://zed.dev) 
 
 ## Setup
 1. Install the extension from the Zed extension marketplace
-2. Configure the extension by adding the following tasks to your `.zed/tasks.json` (or `~/.config/zed/tasks.json` for all workspaces)
+2. Enable the bookmark language server by adding the following to your `.zed/settings.json` (or `~/.config/zed/settings.json` for all workspaces)
+```json
+{
+  "languages": {
+    "Plain Text": {
+      "language_servers": ["bookmark-language-server"]
+    }
+  },
+}
+```
+3. Add the following tasks to your `.zed/tasks.json` (or `~/.config/zed/tasks.json` for all workspaces)
 ```json
 [
   {
@@ -29,6 +39,17 @@ Zed-bookmark is a lightweight bookmark extension for the [Zed](https://zed.dev) 
     "env": {},
     "hide": "always",
     "reveal": "never"
+  }
+]
+```
+4. (Optional) Bind your custom key bindings to the tasks added previously, by editing `.zed/keymap.json` (or `~/.config/zed/keymap.json` for all workspaces). For example:
+```json
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-m": ["task::Spawn", { "task_name": "Bookmark: Add bookmark" }]
+    }
   }
 ]
 ```
