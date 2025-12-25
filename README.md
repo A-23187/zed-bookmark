@@ -11,7 +11,7 @@ Zed-bookmark is a lightweight bookmark extension for the [Zed](https://zed.dev) 
 ![zed-bookmark](https://github.com/user-attachments/assets/a9a197c1-fb14-4b15-9e9c-8448f6d8e55d)
 
 ## Setup
-1. Install the extension from the Zed extension marketplace
+1. Install [the extension](https://zed.dev/extensions/bookmark) from the Zed extension marketplace
 2. Enable the bookmark language server by adding the following to your `.zed/settings.json` (or `~/.config/zed/settings.json` for all workspaces)
 ```json
 {
